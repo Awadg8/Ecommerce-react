@@ -3,6 +3,7 @@ import { useState, useEffect, useContext } from "react";
 import ProductCard from "./ProductCard";
 import { ProductContext } from "../context/productContext";
 
+
 function Main() {
   const { products } = useContext(ProductContext);
 
@@ -451,6 +452,8 @@ function Main() {
             </div>
           </div>
         )}
+
+      
       </main>
     </div>
   );

@@ -1,4 +1,5 @@
 import React, { useState, useContext, useEffect } from "react";
+import ImageZoom from "./ImageZoom";
 import { CartContext } from "../context/CartContext";
 
 function ProductCard({ product }) {
@@ -61,11 +62,13 @@ function ProductCard({ product }) {
                             style={{ maxWidth: "1920px" }}
                           >
                             <div className="aspect-ratio relative mx-auto lg:mx-auto lg:w-full">
-                              <img
+                              {/* <img
                                 className="h-full max-h-full max-w-full top-0 left-0 border-none align-top lg:w-full "
                                 alt={product.imageAlt}
                                 src={product.imageSrc}
-                              />
+                              /> */}
+
+                              <ImageZoom product={product} />
                             </div>
                           </div>
                         </div>
@@ -173,7 +176,7 @@ function ProductCard({ product }) {
                           </div>
                         </div>
                       </div>
-                      
+
                       <div className="product-form-option mb-[24px] sm:mb-[26px]">
                         <h1 className=" mb-4">Color</h1>
 

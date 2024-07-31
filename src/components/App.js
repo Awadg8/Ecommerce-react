@@ -10,6 +10,7 @@ import Main from "./Main";
 import Footer from "./Footer";
 import Cart from "./Cart";
 import Checkout from "./Checkout";
+import ImageZoom from "./ImageZoom";
 
 import "../styles/App.css";
 
